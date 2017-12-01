@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Sign In</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+        <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+        <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/Header-Dark.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/css/Features-Boxed.css" type="text/css"/>
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/Google-Style-Login.css" type="text/css"/>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/jquery.Jcrop.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type= "text/javascript" src = "assets/js/api.js"></script>
+        <script src="assets/js/ocrad.js"></script>
+        
+        <script>
+            window.onload = checkSessionAjaxPOST;
+        </script>
+    </head>
+    <body>
+        
+        
+        <div id="ajaxContent">
+            
+            
+           
+               <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                      <div class="navbar-header"><a class="navbar-brand" href="index.html"><i class="glyphicon glyphicon-phone"></i>DiaBuddy</a>
+                          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                      </div>
+                      <div class="collapse navbar-collapse" id="navcol-1">
+                          <ul class="nav navbar-nav navbar-right"></ul>
+                      </div>
+                  </div>
+              </nav> 
+           
+
+            
+            
+        
+            
+        
+            <div id="content" class="container-fluid">
+                <div class="container">
+                    <div class="login-card" style="height: 400px;">
+                        <img src="assets/img/avatar_2x.png" class="profile-img-card">
+                        <p class="profile-name-card"></p>
+                        <form class="form-signin">
+                            <span class="reauth-email"> </span>
+                            <input class="form-control" type="email" required="" placeholder="Email" autofocus="" id="login_email">
+                            <input class="form-control" type="password" required="" placeholder="Password" id="login_password">
+                            <input class="btn btn-primary btn-block btn-lg btn-signin"
+                                   style="margin-top: 5px; margin-right: 0.5px; width: 99%;"
+                                   type='button' value='Log In' onclick='logInAjaxPOST();'>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>

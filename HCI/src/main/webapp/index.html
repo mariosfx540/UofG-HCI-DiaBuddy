@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type= "text/javascript" src = "assets/js/api.js"></script>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="index.html"><i class="glyphicon glyphicon-phone"></i>DiaBuddy</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="#features">About</a></li>
+                    <li role="presentation"><a href="registerForm.html">Register</a></li>
+                    <li role="presentation"><a href="loginForm.html" style="">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div id="ajaxContent"></div>
+
+        <div class="jumbotron hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 get-it">
+                        <h1 style="font-family: 'Helvetica, sans-serif' ">You can now make a new Buddy!</h1>
+                        <p style="font-family: 'Helvetica, sans-serif'; "><a class="btn btn-primary btn-lg" style=" background-color: #ff9966; border-color: #ff9966;" role="button" href="registerForm.html">TRY NOW!</a></p>
+                        <p style="font-family: 'Helvetica, sans-serif' ">Try it now and get your nutrition and insuline values in AN INSTANCE! Use your camera, scan menus and get your results.</p>
+                        
+                    </div>
+                    <div class="col-md-10">
+                        <form method="post">
+                            <h2 class="sr-only">Login Form</h2></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-boxed" id="features">
+            <div class="container">
+                <div class="row features">
+                    <div class="col-md-4 col-sm-6 item">
+                        <div class="box"><i class="glyphicon glyphicon-heart-empty icon"></i>
+                            <h3 class="name">Estimations</h3>
+                            <p class="description">Our application, uses all of your unique data measurements and tries to approximately calculate your insuline dose, after digesting a meal.</p></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 item">
+                        <div class="box"><i class="glyphicon glyphicon-globe icon"></i>
+                            <h3 class="name">Smart measurements!</h3>
+                            <p class="description">Upload your latest glucose values to the iHealth Cloud, store them securely, and have access them, at any time.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-basic" id="footer">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Services</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2017</p>
+        </footer>
+    </div>
+    <section class="testimonials"></section>
+
+</body>
+
+</html>

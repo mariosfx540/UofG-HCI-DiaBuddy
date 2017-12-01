@@ -1,0 +1,490 @@
+/*
+    To change this license header, choose License Headers in Project Properties.
+    To change this template file, choose Tools | Templates
+    and open the template in the editor.
+    
+    Author: Andreas Kontopoulos
+*/
+
+/* @media (min-width: 940px) { */
+
+	code {
+		border-radius: 6px;
+		color: #fff;
+		display: block;
+		text-align: center;
+	}
+        
+        body{
+            margin:0px;
+            padding:0px;
+            background-color: #ededed;
+        }
+        
+        html{
+            margin:0px;
+            padding:0px;
+        }
+        
+        header,
+        ajaxContent,
+        fieldset,
+	#content
+        {
+            margin: 0 3% 24px 3%; 
+	}
+        
+        nav{
+		background: #333;
+		padding: 10px;
+	}
+        
+	a.navigation {
+		color: white;
+		text-align: center;
+		padding: 8px 20px;
+		text-decoration: none;
+	}
+
+	a.navigation:hover { background-color: #6495ed; } 
+	a.navigation:active { background-color: red; }
+	a.navigation:visited { color:#f0f8ff; } 
+        
+        button.regist {
+            text-align: center;
+            padding: 3px 22px;
+            margin-left: 0.4%;
+        }
+        
+        button.regist:hover { background-color: #6495ed; } 
+	button.regist:active { background-color: red; }
+	button.regist:visited { color:#f0f8ff; } 
+        
+        .intro{
+            background-size: cover;
+        }
+ 
+        .bg{
+            position:absolute;
+            z-index:-1;
+            width: 100%;
+            height: 100%;
+        }
+        
+        
+        .cover, h2-cover {
+            padding-top: 14%;
+            margin-left: 25%;
+            margin-right: 15%; 
+            color: white;
+            font-size: 250%; 
+        }
+        
+        .slide{
+            height:calc(100vh); /*vw is viewport height*/
+            position:relative;
+            background-color: rgba(5,5,5,0.5); 
+        }
+        
+        
+        .icon-scroll,
+        .icon-scroll:before {
+            position: absolute;
+            left: 50%;
+            background-color: rgba(5,5,5,0.3); 
+        }
+        
+        .icon-scroll {
+            width: 40px;
+            height: 70px;
+            margin-left: -20px;
+            top: 90%;
+            margin-top: -35px;
+            box-shadow: inset 0 0 0 1px #fff;
+            border-radius: 25px;
+        }
+            
+        .icon-scroll:before {
+            content: '';
+            width: 5px;
+            height: 10px;
+            background: #fff;
+            margin-left: -2px;
+            top: 8px;
+            border-radius: 8px;
+            animation-duration: 1.8s;
+            animation-iteration-count: infinite;
+            animation-name: scroll;
+        }
+        
+        @keyframes scroll{
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+
+
+        #about {
+           margin-top: 3%;
+            margin-left: 20%;
+            margin-right: 20%; 
+            margin-bottom: 15%; 
+        }
+        
+        button.regist {
+            text-align: center;
+            padding: 3px 22px;
+            margin-left: 0.4%;
+            position: relative;
+        }
+        
+        button.regist:hover { background-color: #4682B4;  } 
+	button.regist:active { background-color: red; }
+	button.regist:visited { color:#f0f8ff; } 
+        
+        
+
+	#content {
+		float: left;
+		width: 90%;
+		min-height: 600px;
+                padding: 2%;
+	}
+	
+        fieldset {
+            /* display: none; */ 
+            margin-top: 2%;
+            margin-left: 35%;
+            margin-right: 35%; 
+            width: 30%;
+            z-index: 1; 
+            background: white;
+        }
+        
+        input:not(#images) {
+            width: 100%;
+            padding: 2%;
+            margin: 4px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        input[type=radio]:not(#images){
+            width: 6%;
+            padding: 2%;
+            margin: 4px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        #images {
+            text-align:center; 
+            margin: 0 3% 24px 3%; 
+            margin-left: 25%;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 2%;
+            margin: 4px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        select {
+            width: 100%;
+            padding: 2%;
+            margin: 4px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+	img.photos {
+            float: left;
+            width:160px;
+            height:185px;
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid #333;
+            position: relative;
+            transition: transform 0.5s;
+        }
+	
+        /*
+	img.photos:hover {
+		transform: scale(1.4, 1.4);
+		z-index: 1;
+	}
+	*/
+        
+	#error {
+		float: left;
+		margin: 2px;
+		padding: 2px;
+		text-align: center;
+		font-size: 36px;
+		font-family: courier;
+		display: block;
+	}
+	
+        
+	.modal {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		padding-top: 70px; 
+		padding-bottom: 70px;
+		left: 0;
+		top: 0;
+		margin: 2% 3% 2% 3%; 
+		width: 94%; 			
+		height: auto;
+		overflow: auto; 
+		background-color: rgba(5,5,5,0.9); 
+	}
+
+	.modal-content {
+		float: left;
+		margin: 1%;
+		display: block;
+		width: 50%;
+		height: 92%;
+		border: 2px solid #333;
+	}
+        
+        #write_comment {
+            float: left;
+            margin: 1%;
+            margin-bottom: 5%;
+            display: block;
+            width: 50%;
+            height: 40%;
+            border: 2px solid #333;
+            color: #ccc;
+        }
+        
+        #metadata, #image_rating, #user_rating {
+            float: right;
+            margin-right: 7%;
+            margin-top: 1.5%;
+            margin-bottom: 2%;
+            display: block;
+            width: 40%;
+            text-align: left;
+            color: #ccc;
+        }
+        
+	#caption {
+		float: right;
+		margin-right: 7%;
+		display: block;
+		width: 40%;
+		text-align: left;
+		color: #ccc;
+		height: 180px;
+	}
+        
+	#map {
+		float: left;
+		margin: 1%;
+		display: block;
+		width: 50%;
+		height: 92%;
+		border: 2px solid #333;
+	}
+	
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: #f1f1f1;
+		font-size: 20px;
+		font-weight: bold;
+		transition: 0.3s;
+		border: 2px solid #333;
+	}
+
+	.close:hover {
+		background-color:red;
+		color: #bbb;
+		cursor: pointer;
+	}
+	
+        input:not(#images):invalid {
+            border: 1px solid red;
+        }
+        
+        input:not(#images):valid {
+            border: 1px solid green;
+        }
+        
+        #del_acc {
+            float: left;
+            width: 10%;
+            height: 10%;
+            margin-bottom: 1%;
+        }
+        
+        #del_photo{
+            float: left;
+            margin-left:0.8%;
+            margin-right: 7%;
+            margin-top: 1.5%;
+            display: block;
+            text-align: left;
+        }
+        
+         #rating {
+            float: left;
+            margin-left:0.8%;
+            margin-top: 1%;
+            display: block;
+            width: 40%;
+            text-align: left;
+            color: #ccc;
+            height: 50%;
+        }
+        
+
+        
+
+        
+div.lesson {
+    display:inline-block;
+    margin: 2%;
+}
+
+label[for=english],
+label[for=greek],
+label[for=spanish],
+label[for=german],
+label[for=russian],
+label[for=french],
+label[for=c],
+label[for=cpp],
+label[for=java],
+label[for=html],
+label[for=js],
+label[for=python] {
+    line-height: 150%;
+}
+
+input#english, 
+input#greek, 
+input#spanish,
+input#german, 
+input#russian, 
+input#french,
+input#c,
+input#cpp,
+input#java,
+input#html,
+input#js,
+input#python {
+    float:left;
+    height: 120px;
+    width: 200px;
+    z-index: 10;
+    opacity: 0.9;
+    display: inline-block;
+    vertical-align: middle;
+    cursor:pointer;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    border: 1px solid black;
+}
+
+
+input#english:hover,
+input#greek:hover,
+input#spanish:hover,
+input#german:hover,
+input#russian:hover,
+input#french:hover,
+input#c:hover,
+input#cpp:hover,
+input#java:hover,
+input#html:hover,
+input#js:hover,
+input#python:hover {
+    opacity: 1;
+}
+
+
+
+
+input#english{
+    background: url('../images/flag-of-United-Kingdom.png') 0 0px no-repeat;
+}
+
+input#greek{
+    background: url('../images/flag-of-Greece.png') 0 0px no-repeat;
+}
+
+input#spanish{
+    background: url('../images/flag-of-Spain.png') 0 0px no-repeat;
+}
+
+
+input#german{
+    background: url('../images/flag-of-Germany.png') 0 0px no-repeat;
+}
+
+
+input#russian{
+    background: url('../images/flag-of-Russia.png') 0 0px no-repeat;
+}
+
+
+input#french{
+        background: url('../images/flag-of-France.png') 0 0px no-repeat;
+}
+
+input#c{
+    background: url('../images/C.jpg') 0 0px no-repeat;
+}
+
+input#cpp{
+    background: url('../images/C++.jpg') 0 0px no-repeat;
+}
+
+input#java{
+    background: url('../images/java.jpg') 0 0px no-repeat;
+}
+
+input#html{
+    background: url('../images/html.jpg') 0 0px no-repeat;
+}
+
+input#js{
+    background: url('../images/JS.jpg') 0 0px no-repeat;
+}
+
+input#python{
+    background: url('../images/python.jpg') 0 0px no-repeat;
+}
+
+        
+        
+        
+        
+	footer {
+                background-color: #4682B4;
+		text-align: center;
+		clear: both;
+		min-height: 150px;
+	}
+        
+        
+
+

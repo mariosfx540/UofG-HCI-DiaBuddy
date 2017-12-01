@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+        <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+        <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/Header-Dark.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/css/Features-Boxed.css" type="text/css"/>
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/Google-Style-Login.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.Jcrop.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type= "text/javascript" src = "assets/js/api.js"></script>
+        <script src="assets/js/ocrad.js"></script>
+        
+        <script>
+            window.onload = checkSessionAjaxPOST; 
+        </script>
+    </head>
+    <body>
+        <div id='ajaxContent'>
+            
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header"><a class="navbar-brand" href="index.html"><i class="glyphicon glyphicon-phone"></i>DiaBuddy</a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav navbar-right"></ul>
+                    </div>
+                </div>
+            </nav>
+            
+        
+            <div id="content">
+                <div class="container">
+                    <div class="login-card">
+                        <img src="assets/img/avatar_2x.png" class="profile-img-card">
+                        <p class="profile-name-card"></p>
+                        <form class="form-signin">
+                            <span class="reauth-email"> </span>
+                            <input class="form-control" type='text' name='first_name' required placeholder="Enter your full name" autofocus="" id="name" >
+                            <input class="form-control" type="email" required="" placeholder="Email" id="email">
+                            <input class="form-control" type="password" required="" placeholder="Password" id="password">
+                            <input class="form-control" type="password" required="" placeholder="Confirm Password" id="re_password">
+                            <input class="form-control" type="text" required="" placeholder="Import your Carbs per Insuline" id="to_carb_ratio">
+                            <input class="form-control" type="text" required="" placeholder="Correction Factor" id="correction_factor">
+                            <input class="form-control" type="text" required="" placeholder="Normal Blood Glugose (mg/dl)" id="normal_bg">
+                            
+                            <label>Gender:</label><br>
+                            <input id="male" type="radio" name="gender" value="Male">&nbsp Male &nbsp &nbsp &nbsp
+                            <input id="female" type="radio" name="gender" value="Female">&nbsp Female<br>
+                            
+                            <input class="btn btn-primary btn-block btn-lg btn-signin" type='button' value='Register' onclick='SignUpAjaxPOST();'>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
